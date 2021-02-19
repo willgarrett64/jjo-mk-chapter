@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Global styles */
+
+button {
+  color: white;
+  font-weight: bold;
+  background-color: #276FFB;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+
+h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+
+/* Header Section */
+header {
+  position: relative;
+  color: white;
+  height: 500px;
+}
+
+header img {
+  width: 100%;
+  position: absolute;
+}
+
+header h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+header nav {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1% 7%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header li {
+  margin: 1rem;
+}
+
+header nav button {
+  margin: 1rem;
+}
+
+header .header-text {
+  position: absolute;
+  padding: 10% 7%;
+}
+
+
+
+
+/* Job Offers Section */
+#new-jobs {
+  width: auto;
+  margin: 0 10%;
+}
+
+#new-jobs h2 {
+  float: left;
+}
+
+#new-jobs .view-jobs {
+  float: right;
+}
+
+#new-jobs .view-jobs a {
+  color: #276FFB;
+  text-decoration: none;
+}
+
+
+
+
+.job-advert-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  clear: both;
+}
+
+.job-advert-container hr {
+  margin: 0px 30px
+}
+
+.job-advert {
+  max-width: 500px;
+  min-width: 300px;
+
+}
+
+.job-title {
+  font-weight: 800;
+  font-size: 1.2.rem;
+  color: #276FFB;
+  float: left;
+}
+
+.time-posted, .job-location, .job-descrip {
+  color: #707070;
+  font-size: 1rem;
+
+}
+
+.time-posted {
+  font-size: 0.8rem;
+  float: right;
+}
+
+.hiring-company {
+  clear: left;
+  float: left;
+}
+
+.job-location {
+  margin-left: 1rem;
+  float: left;
+}
+
+.job-descrip {
+  width: 75%;
+  clear: both;
+}
+
+
+
+
+
+/* Featured Section */
+#featured {
+  margin: 5% 10%;
+
+}
+
+.featured-company-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  
+}
+
+.featured-company figure {
+  padding: 25px;
+  border: 1px solid #707070;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+
+
+/* Subscribe Section */
+#subscribe {
+  height: 168px;
+  margin: 0 10%;
+  background-color: black;
+  color: white;
+}
+
+#subscribe img {
+  width: 100%;
+}
+
+#subscribe .content {
+  position: relative;
+  bottom: 150px;
+}
