@@ -27,8 +27,6 @@ a:hover {
   cursor: pointer;
 }
 
-
-
 h2 {
   font-weight: 900;
   font-size: 2.5rem;
@@ -42,6 +40,7 @@ h2 {
   justify-content: space-between;
 }
 /*#endregion*/
+
 
 
 /*#region side-scrolling section*/
@@ -101,7 +100,7 @@ header img {
 }
 
 header h3 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 800;
 }
 
@@ -248,7 +247,13 @@ header nav button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.featured-company h4 {
   font-size: 1.5rem;
+  font-weight: 800;
+  color: #141414;
+  text-decoration: none;
 }
 
 .featured-company figure {
@@ -258,10 +263,6 @@ header nav button {
   margin: 5px 35px;
 }
 
-#featured h4 {
-  color: #141414;
-  text-decoration: none;
-}
 
 #featured a {
   text-decoration: none;
