@@ -134,15 +134,19 @@ header nav button {
 }
 
 .header-text {
+  height: 160px;
   padding: 11% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-text h2{
   word-spacing: 0.3rem;
 }
 
-.header-text p {
-  margin: 1.25rem 0;
+.header-text button {
+  max-width: 160px;
 }
 
 /*#endregion*/
@@ -281,10 +285,6 @@ header nav button {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-}
-
-#subscribe img {
-  width: 100%;
 }
 
 .subscribe-content {
