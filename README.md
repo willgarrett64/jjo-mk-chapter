@@ -1,11 +1,10 @@
-## What is Good Code? 👋
-Good code offers free Adobe XD templates for you to download and use to sharpen your HTML and CSS skills. All assets used are included in the compressed file and you can use them however you like, except for commercial use. 
+# Good Code - JJO Challenge
+This webpage is a challenge from Good Code in which you're given an XD file and are asked to build the site with HTML/CSS, getting as close as possible to the original design. The original challenge can be found [here](https://moeminm.github.io/goodcode/).
 
-## What is the challenge?   
-Get as close as possible to the design. Don't bother too much with pixel-perfection, as long as you have the basic layout, you're good to go!
+## Technologies
+- HTML
+- CSS
+- Git and GitHub
 
-## Where can I publish my code and/or results?
-You can post your results on the /r/GoodCodeChallenge subreddit, created just for this website. 
-
-I'm always looking for feedback to improve any project I work, if you have any, please DM me at my e-mail over at moeminmamdouh@hotmail.com
-Thank you and have a wonderful day!
+## Future Development
+In its current state, the site works well on large, landscape screens. However, I intend to make it fully responsive in the future. 
