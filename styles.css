@@ -4,29 +4,88 @@
   font-family: 'Manrope', sans-serif;
 }
 
-/* Global styles */
-
+/*#region Global styles */
 button {
   color: white;
   font-weight: bold;
-  background-color: #276FFB;
+  background-color: #266EFD;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.3rem;
+  box-shadow: 0 1px 8px 0 #3876F1;
 }
+
+button:hover {
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 
 
 h2 {
   font-weight: 900;
-  font-size: 2rem;
-  margin-bottom: 1.2rem;
+  font-size: 2.5rem;
 }
 
+.top-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+}
+/*#endregion*/
 
-/* Header Section */
+
+/*#region side-scrolling section*/
+.scroller {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+/* .scroller::-webkit-scrollbar {
+  display: none;
+} */
+
+/* .scroller::after {
+  content: '';
+  flex: 0 0 10px; 
+}
+
+.scroller::before {
+  content: '';
+  flex: 0 0 10px; 
+} */
+
+.scroll-item {
+  flex: 0 0 auto;
+  box-sizing: content-box;
+}
+
+/* .scroll-item.first {
+  margin-left: 10%;
+}
+
+.scroll-item.last {
+  margin-right: 10%;
+} */
+/*#endregion*/
+
+
+
+/*#region Header Section */
 header {
   position: relative;
   color: white;
+  margin-bottom: 2.5rem;
 }
 
 header img {
@@ -49,7 +108,7 @@ header h3 {
 header nav {
   width: 100%;
   box-sizing: border-box;
-  padding: 1% 7%;
+  padding: 3% 10%;
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -64,32 +123,46 @@ header nav ul {
 }
 
 header li {
-  margin: 1rem;
+  margin: 0 1.3rem;
+}
+
+header li a {
+  color: white;
 }
 
 header nav button {
-  margin: 1rem;
+  margin: 0 1.3rem;
 }
 
-header .header-text {
-  padding: 10% 7%;
+.header-text {
+  padding: 11% 10%;
 }
 
+.header-text h2{
+  word-spacing: 0.3rem;
+}
+
+.header-text p {
+  margin: 1.25rem 0;
+}
+
+/*#endregion*/
 
 
 
-/* Job Offers Section */
+/*#region Job Offers Section */
 #new-jobs {
   width: auto;
-  margin: 0 10%;
 }
 
 #new-jobs h2 {
-  float: left;
+  margin: 0 10%;
 }
 
 #new-jobs .view-jobs {
-  float: right;
+  margin-right: 10%;
+  align-self: center;
+  font-weight: 800;
 }
 
 #new-jobs .view-jobs a {
@@ -97,15 +170,9 @@ header .header-text {
   text-decoration: none;
 }
 
-
-
-
 .job-advert-container {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-shrink: 1;
-  clear: both;
+  margin: 2rem 10%;
+  justify-content: space-between;
 }
 
 .job-advert-container hr {
@@ -113,27 +180,25 @@ header .header-text {
 }
 
 .job-advert {
+  position: relative;
   max-width: 500px;
-  min-width: 300px;
-
+  min-width: 400px;
 }
 
 .job-title {
   font-weight: 800;
-  font-size: 1.2.rem;
+  font-size: 1.35rem;
   color: #276FFB;
-  float: left;
 }
 
 .time-posted, .job-location, .job-descrip {
   color: #707070;
   font-size: 1rem;
-
 }
 
 .time-posted {
   font-size: 0.8rem;
-  float: right;
+  align-self: center;
 }
 
 .hiring-company {
@@ -147,23 +212,34 @@ header .header-text {
 }
 
 .job-descrip {
-  width: 75%;
-  clear: both;
+  max-width: 375px;
+  margin-top: 3rem;
+  margin-bottom: 1.75em;
+  line-height: 1.5rem;
+  word-spacing: 0.05rem;
 }
 
+.job-advert button {
+  font-size: 1.4rem;
+  padding: 0.25rem 0.8rem;
+  margin-bottom: 1%;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*#endregion*/
 
 
 
-
-/* Featured Section */
-#featured {
-  margin: 5% 10%;
-
+/*#region Featured Section */
+#featured h2 {
+  margin: 2% 10%;
 }
 
 .featured-company-container {
-  width: 100%;
-  display: flex;
+  margin: 2rem 10%;
   justify-content: space-between;
 }
 
@@ -173,25 +249,37 @@ header .header-text {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  
 }
 
 .featured-company figure {
   padding: 25px;
   border: 1px solid #707070;
   border-radius: 100%;
-  margin-bottom: 5px;
+  margin: 5px 35px;
 }
 
+#featured h4 {
+  color: #141414;
+  text-decoration: none;
+}
 
-/* Subscribe Section */
+#featured a {
+  text-decoration: none;
+}
+/*#endregion*/
+
+
+
+/*#region Subscribe Section */
 #subscribe {
-  position: relative;
-  margin: 0 10%;
-  margin-bottom: 5%;
-  background-color: black;
+  margin: 3% 10%;
+  background-color: #141414;
   color: white;
-  height: max-content;
+
+  background-image: url('./images/Newsletter-image.png');
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
 }
 
 #subscribe img {
@@ -199,8 +287,55 @@ header .header-text {
 }
 
 .subscribe-content {
-  height: max-content;
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 455px;
+  padding: 3% 5%;
 }
+
+.subscribe-content p {
+  margin: 5% 0;
+}
+
+#subscribe .email-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#subscribe input {
+  height: 2rem;
+  width: 65%;
+  border: none;
+  border-radius: 0.3rem;
+  padding-left: 5%;
+}
+
+#subscribe button {
+  width: 25%;
+}
+
+/*#endregion*/
+
+
+
+/*#region Footer Section */
+footer {
+  margin: 0 auto;
+  width: 50%;
+
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: #141414;
+}
+/*#endregion*/
